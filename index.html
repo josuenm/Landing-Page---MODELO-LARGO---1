@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adestramento em 30 Dias">
+    <meta name="description" content="Aprenda como você pode adestrar seu animalzinho sem muito esforço e sofrimento!">
+    <meta name="robots" content="noindex,nofollow">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Script JS -->
+    <script type="text/babel" src="./assets/js/script.js"></script>
+
+    <!-- Bootstrap Bundle com Popper -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <title>Adestramento em 30 Dias</title>
+</head>
+
+<body onload="start()">
+
+    <div id="exitpop" onmouseover="activePop()"></div>
+
+    <main>
+        <!-- VIDEO -->
+        <section class="first-section container-md text-center mt-5">
+            <p class="bg-warning d-inline border">
+                <strong>INÉDITO:</strong>
+            </p>
+            <p class="text-light my-5">
+                Programa de Adestramento em 30 Dias Ajudou<span class="destaque"><strong> Mais de 15.000 Pessoas a Adestrar Seus Cães!</strong></span>
+            </p>
+
+            <div class="video mt-3">
+                <iframe src="https://www.youtube.com/embed/8_GFU5aZ9h0" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p>
+                    Adquira por apenas <strong>R$127,00!</strong>
+                </p>
+                <p>
+                    Pague a vista ou parcele no cartão em até 4x.
+                </p>
+                <p>
+                    <strong>Compra 100% segura!</strong>
+                </p>
+            </div>
+
+            <a href="#" class="green-button d-block mt-4">ADQUIRIR</a>
+        </section>
+
+        <!-- OFERTA E TIMER -->
+        <section class="second-section d-flex py-5 text-light">
+            <div class="container-md">
+                <div class="text-center mb-5">
+                    <span class="display-6">
+                        Adquira <span class="text-warning"><strong>só hoje</strong></span> por apenas <span
+                            class="text-warning"><strong>R$127,00!</strong></span>
+                    </span>
+                    <span class="display-5 d-block">
+                        Pague a vista ou parcele no cartão em até 4x
+                    </span>
+                </div>
+                <div class="text-center">
+                    <span class="display-6">Essa oferta expira em</span>
+                </div>
+                <div class="d-flex justify-content-center mt-5 text-center">
+                    <div class="horas p-2 p-md-4 rounded-3 me-2 me-md-3">
+                        <span class="display-1" id="horas">00</span>
+                        <span class="d-block text-center">HORAS</span>
+                    </div>
+                    <div class="minutos p-2 p-md-4 rounded-3 bg-primary me-2 me-md-3">
+                        <span class="display-1" id="minutos">00</span>
+                        <span class="d-block text-center">MINUTOS</span>
+                    </div>
+                    <div class="segundos p-2 p-md-4 rounded-3 bg-primary">
+                        <span class="display-1" id="segundos">00</span>
+                        <span class="d-block text-center">SEGUNDOS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SESSÃO DE INFORMAÇÃO 1 -->
+        <section class="third-section py-5">
+            <div class="container-md d-flex text-center text-md-start">
+                <div class="col-12 col-md-6 d-none d-md-block">
+                    <img src="./assets/images/third-section.jpg" alt="" class="img-fluid rounded rounded-3">
+                </div>
+                <div class="col-12 col-md-6 ps-md-5">
+                    <h3>
+                        APRENDA COMO A MENTE DOS CÃES FUNCIONAM!
+                    </h3>
+                    <p>
+                        Aprenda porquê o seu cão faz oque faz e tome atitudes baseado nisso para oferecer o maior
+                        conforto para você e seu amigo(a)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SESSÃO DE INFORMAÇÃO 2 -->
+        <section class="fourth-section py-5">
+            <div class="container-md d-flex text-center text-md-start">
+                <div class="col-12 col-md-6 text-light pe-md-5">
+                    <h3 class="text-start">
+                        CONTROLE DA FORMA CERTA E SEGURA O QUANTO SEU CÃO COME!
+                    </h3>
+                    <p class="text-start">
+                        Aprenda porquê o seu cão faz oque faz e tome atitudes baseado nisso para oferecer o maior
+                        conforto para você e seu amigo(a)
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                    <img src="./assets/images/fourth-section.jpg" alt="" class="img-fluid rounded rounded-3">
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section class="fifth-section py-5">
+            <div class="container-md text-center mb-5">
+                <i class="bi bi-people"></i>
+                <p>Veja abaixo o resultado obtido com nosso curso:</p>
+            </div>
+            <div class="testimony container-md mb-5 text-light p-3 p-md-5">
+                <!-- Comentário 1 -->
+                <div class="mb-4">
+                    <!-- Foto de Perfil -->
+                    <img src="./assets/images/perfil-1.jpg" alt="Imagem de perfil" class="profile me-2 d-inline-block"
+                        onclick="privateAction()">
+
+                    <!-- Nome e Comentário -->
+                    <div class="backgroundComment p-3 d-inline-block w-75">
+                        <span class="name" onclick="privateAction()">Reinaldo Alberto</span>
+                        <div class="comment">
+                            <span>
+                                Meu deeeeus muito fácil! Olha minha Mel obedecendo e sentando
+                            </span>
+                        </div>
+                    </div>
+                    <div class="img-depoimento">
+                        <img src="./assets/images/depoimento1.jpg" width="400" alt="" class="img-fluid">
+                    </div>
+
+                    <!-- Abaixo do Comentário -->
+                    <div class="ms-5">
+                        <span class="spec ms-3" onclick="privateAction()">Curtir</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">Responder</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">4 d</span>
+                    </div>
+                </div>
+
+                <!-- Comentário 2 -->
+                <div class="mb-4">
+                    <!-- Foto de Perfil -->
+                    <img src="./assets/images/perfil-2.jpg" alt="Imagem de perfil" class="profile me-2 d-inline-block"
+                        onclick="privateAction()">
+
+                    <!-- Nome e Comentário -->
+                    <div class="backgroundComment p-3 d-inline-block w-75">
+                        <span class="name" onclick="privateAction()">Reinaldo Alberto</span>
+                        <div class="comment">
+                            <span>
+                                MUUUUUITO OBRIGADAAAH! meu dog parou de morder meu sofá e aprendeu a fazer suas
+                                necessidades no local certo
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Abaixo do Comentário -->
+                    <div class="ms-5">
+                        <span class="spec ms-3" onclick="privateAction()">Curtir</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">Responder</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">4 d</span>
+                    </div>
+                </div>
+
+                <!-- Comentário 3 -->
+                <div class="mb-4">
+                    <!-- Foto de Perfil -->
+                    <img src="./assets/images/perfil-3.jpg" alt="Imagem de perfil" class="profile me-2 d-inline-block"
+                        onclick="privateAction()">
+
+                    <!-- Nome e Comentário -->
+                    <div class="backgroundComment p-3 d-inline-block w-75">
+                        <span class="name" onclick="privateAction()">Reinaldo Alberto</span>
+                        <div class="comment">
+                            <span>
+                                Tenho 4 cachorros bem fortes e nunca abedecia os adestradores, só eu, entao tive a ideia
+                                de virar o próprio adestrador deles, muito bom! hj meus meninos tão muito comportados
+                                kkkk
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Abaixo do Comentário -->
+                    <div class="ms-5">
+                        <span class="spec ms-3" onclick="privateAction()">Curtir</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">Responder</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">4 d</span>
+                    </div>
+                </div>
+
+                <!-- Comentário 4 -->
+                <div class="mb-4">
+                    <!-- Foto de Perfil -->
+                    <img src="./assets/images/perfil-4.jpg" alt="Imagem de perfil" class="profile me-2 d-inline-block"
+                        onclick="privateAction()">
+
+                    <!-- Nome e Comentário -->
+                    <div class="backgroundComment p-3 d-inline-block w-75">
+                        <span class="name" onclick="privateAction()">Reinaldo Alberto</span>
+                        <div class="comment">
+                            <span>
+                                trabalho com cães e esses métodos do curso fez minha carreira mudar da agua pro vinho
+                                vlw
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Abaixo do Comentário -->
+                    <div class="ms-5">
+                        <span class="spec ms-3" onclick="privateAction()">Curtir</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">Responder</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">4 d</span>
+                    </div>
+                </div>
+
+                <!-- Comentário 5 -->
+                <div class="mb-4">
+                    <!-- Foto de Perfil -->
+                    <img src="./assets/images/perfil-5.jpg" alt="Imagem de perfil" class="profile me-2 d-inline-block"
+                        onclick="privateAction()">
+
+                    <!-- Nome e Comentário -->
+                    <div class="backgroundComment p-3 d-inline-block w-75">
+                        <span class="name" onclick="privateAction()">Reinaldo Alberto</span>
+                        <div class="comment">
+                            <span>
+                                meu pai achava que adestrar depois de adulto era dificil mas esse curso me salvou! tmj
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="img-depoimento">
+                        <img src="./assets/images/depoimento2.jpg" width="400" alt="" class="img-fluid">
+                    </div>
+
+                    <!-- Abaixo do Comentário -->
+                    <div class="ms-5">
+                        <span class="spec ms-3" onclick="privateAction()">Curtir</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">Responder</span>
+                        <span> · </span>
+                        <span class="spec" onclick="privateAction()">4 d</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SESSÃO DE INFORMAÇÃO 3 -->
+        <section class="sixth-section py-5 mt-5">
+            <div class="container-md d-flex">
+                <div class="col-12 col-md-6 pe-md-5 align-self-center text-center text-md-start">
+                    <h3>
+                        QUEM DEVE PARTICIPAR DO PROGRAMA?
+                    </h3>
+                    <p>
+                        Se você não sabe como ensinar seu animalzinho, ou não tem tempo sobrando para passar horas no
+                        dia vendo um curso esse é o curso ideal para você! Usamos métodos de ensino muito coerentes que
+                        ficam fácil de se entender, fazendo assim você economizar tempo.
+                    </p>
+                    <p>
+                        Temos modulos para quem quer ganhar dinheiro como um adestrador profissional! Ensinamos você a
+                        como se comportar com possíveis eventos que ocorrem enquanto você adestro um cão e mostramos
+                        como e aonde você pode encontrar seus primeiros clientes!
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 d-none d-md-block">
+                    <img src="./assets/images/para-mim.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULOS DO CURSO -->
+        <section class="seventh-section py-5 mt-5">
+            <div class="container-md">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                <span class="accordion-header col-10">MODULO 1: INTRODUÇÃO</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <p>
+                                    Aqui iniciamos falando um pouco mais sobre oque será o curso e a curva de
+                                    aprendizado sua e
+                                    do
+                                    seu cão, também falamos do que você vai precisar para darmos início!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                <span class="col-10">MODULO 2: COMO OS CÃES PENSA E AGEM</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <p>
+                                    Neste modulo você aprenderá porque os cães tomam algumas atitudes que são baseadas
+                                    em se
+                                    proteger, proteger algo ou alguém ou até por curiosidade tenta fazer algo, enfim,
+                                    tem muitas
+                                    possibilidades e falamos com clareza quais são elas.
+                                </p>
+                                <p>
+                                    Os cães agem de uma forma inesperada muita das vezes e não sabemos oque fazer,
+                                    aprenda oque
+                                    fazer diante à algumas atitudes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                <span class="col-10">MODULO 2: COMO OS CÃES PENSA E AGEM</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <p>
+                                    Neste modulo você aprenderá porque os cães tomam algumas atitudes que são baseadas
+                                    em se
+                                    proteger, proteger algo ou alguém ou até por curiosidade tenta fazer algo, enfim,
+                                    tem muitas
+                                    possibilidades e falamos com clareza quais são elas.
+                                </p>
+                                <p>
+                                    Os cães agem de uma forma inesperada muita das vezes e não sabemos oque fazer,
+                                    aprenda oque
+                                    fazer diante à algumas atitudes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                <span class="col-10">MODULO 3: TÉCNICAS DE APRENDIZADO</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                <p>
+                                    Neste modulo você aprenderá porque os cães tomam algumas atitudes que são baseadas
+                                    em se
+                                    proteger, proteger algo ou alguém ou até por curiosidade tenta fazer algo, enfim,
+                                    tem muitas
+                                    possibilidades e falamos com clareza quais são elas.
+                                </p>
+                                <p>
+                                    Os cães agem de uma forma inesperada muita das vezes e não sabemos oque fazer,
+                                    aprenda oque
+                                    fazer diante à algumas atitudes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFive">
+                                <span class="col-10">MODULO 4: ASSOCIAÇÃO - FAZENDO ELE(A) GOSTAR DE FAZER OQUE
+                                    APRENDEU</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body">
+                                <p>
+                                    Este modulo é super interessante! Aqui vamos falar como você pode fazer seu cão
+                                    associar
+                                    alguns
+                                    atos à comida, se ele não faz algo ou faz ele ganha comida, é uma boa associação que
+                                    podemos
+                                    fazer entre outras que você verá neste modulo!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseSix">
+                                <span class="col-10">MODULO 5: MAIS UM POUCO SOBRE OS CÃES</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingSix">
+                            <div class="accordion-body">
+                                <p>
+                                    Neste modulo vamos ensinar como você pode passear com seu cão sem que ele te arraste
+                                    pelo
+                                    chão!
+                                    Sabemos que alguns cãos são grandes e fortes e podem causar uma dor de cabeça nesta
+                                    questão,
+                                    vamos ensinar oque chama a atenção deles e porque eles agem assim e com isso vamos
+                                    dar
+                                    início a
+                                    algumas técnicas práticas
+                                </p>
+                                <p>
+                                    Vamos te ensinar a lidar com possíveis eventos como outros cães que aproximam do seu
+                                    apresentando um comportamento agressivo. Também ensinamos oque fazer quando seu
+                                    animalzinho
+                                    escutar algum barulho desconfortavel
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseSeven">
+                                <span class="col-10">MODULO ADESTRADOR PROFISSIONAL: COMO E ONDE ACHAR CLIENTES</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingSeven">
+                            <div class="accordion-body">
+                                <p>
+                                    Neste modulo vamos ensinar como você pode conseguir seus primeiro clientes mesmo não
+                                    tendo
+                                    expêriencia! Além disso vamos dar dicas de como agir neste emprego já que a
+                                    confiança é um
+                                    ponto
+                                    forte nesta profissão!
+                                </p>
+                                <p>
+                                    Aqui é um modulo importante que explica melhor algumas atitudes que possa ocorrer e
+                                    vamos
+                                    ensinar como agir sobre isso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseEight">
+                                <span class="col-10">MODULO BÔNUS: SEGREDO</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingEight">
+                            <div class="accordion-body">
+                                <strong>MODULO SECRETO!</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseNine">
+                                <span class="col-10">MODULO BÔNUS: SEGREDO</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingNine">
+                            <div class="accordion-body">
+                                <strong>MODULO SECRETO!</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="eighth-section py-5 mt-5">
+            <div class="container-md">
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/images/garantia.png" width="300" alt="" class="img-fluid mb-5">
+                </div>
+                <div class="d-flex justify-content-center mb-4 ">
+                    <p class="text-center ">
+                        Eu sei que mesmo depois do que te mostramos aqui, você pode ainda estar inseguro(a). Mas nós
+                        vamos facilitar a sua vida. Vamos deixar você experimentar o programa Adestramento em 30 Dias
+                        (com direito a todos os bônus) por 7 dias para você ver o resultado que vai ter nesse período.
+                        Se por qualquer razão você não gostar ou se adaptar ao curso, nos envie um e-mail dentro desse
+                        período que simplesmente devolvemos 100% do valor que você pagou. Você não corre nenhum um risco
+                        em testar. Mentira! Na verdade, corre sim. O risco de daqui a 30 dias, finalmente conseguir
+                        alcançar o seu objetivo. Porque uma coisa é certa, se você não fizer nada, você terá o problemas
+                        com o seu animalzinho da mesma forma, é isso mesmo que você quer?
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="green-button d-block text-center">ADQUIRIR</a>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-center mt-5">
+        <div id="aviso" class="pt-3 px-2">
+            <p>
+                AVISO LEGAL: Todas as dicas e conceitos apresentados aqui têm como objetivo apenas informar e educar.
+                Este website foi disponibilizado com esse objetivo e não tem intenção nenhuma de servir como orientação
+                a mal tratos, apenas ensinamos da forma certa e não aceitamos que nossos alunos faça algo parecido.
+                Nenhuma informação desta página ou curso Adestramento em 30 Dias subistitui o trabalho de um adestrador
+                profissional. Jamais faça nenhuma mudança na alimentação do seu cão que não seja informada no curso!
+                Tenha em mente que os resultados aqui apresentados são de pessoas reais, mas não garante que você terá
+                os mesmo resultados. Vai do esforço e paciência de cada pessoa. Os proprietários deste curso online não
+                se responsabilizam por
+                quaisquer danos ou lesões resultantes a comportamentos do cão. Isto é por sua conta. Adestramento em 30
+                dias - Todos os
+                direitos reservados.
+            </p>
+        </div>
+        <div id="copyright-footer" class="py-2">
+            <p>
+                Copyright Adestramento em 30 Dias © 2021. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
