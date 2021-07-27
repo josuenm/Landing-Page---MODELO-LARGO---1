@@ -44,7 +44,7 @@ function activePop() {
     document.body.innerHTML += 
     `
     <div id="backgroundPop" onclick="closePop()">
-        <div id="pop">
+        <div id="pop" class="w-75 h-25">
             <button class="btn-close float-end m-3 d-block" aria-label="Close"></button>
             <div class="container d-flex align-self-center justify-content-center text-center">
                 <span class="h2">
