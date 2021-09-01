@@ -2,7 +2,7 @@
 
 Essa landing page foi feita com HTML,CSS e JS. Também foi usado SASS e Bootstrap.
 
-Quero ressaltar o uso do framework Bootstrap e da manipulação de dados em LocalStorage.
+Quero ressaltar o uso do framework Bootstrap e da manipulação de dados em LocalStorage. Além disso a responsividade esta impecável graças ao Bootstrap.
 
 ![image](https://user-images.githubusercontent.com/83486074/131728177-23476c5d-820f-4c69-ba4c-bdbdad08a5cd.png)
 
